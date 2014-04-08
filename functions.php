@@ -288,6 +288,8 @@ function cw_magazine_slider(){
 							echo '<p class="caption">';
 								echo '<span>'.$cwp_slide_caption_title1.'</span>';
 								echo $cwp_slide_caption_text1;
+								echo '<br>';
+								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
@@ -303,6 +305,8 @@ function cw_magazine_slider(){
 							echo '<p class="caption">';
 								echo '<span>'.$cwp_slide_caption_title2.'</span>';
 								echo $cwp_slide_caption_text2;
+								echo '<br>';
+								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
@@ -318,6 +322,8 @@ function cw_magazine_slider(){
 							echo '<p class="caption">';
 								echo '<span>'.$cwp_slide_caption_title3.'</span>';
 								echo $cwp_slide_caption_text3;
+								echo '<br>';
+								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
@@ -333,6 +339,8 @@ function cw_magazine_slider(){
 							echo '<p class="caption">';
 								echo '<span>'.$cwp_slide_caption_title4.'</span>';
 								echo $cwp_slide_caption_text4;
+								echo '<br>';
+								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
