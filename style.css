@@ -1493,8 +1493,6 @@ a:active {
 
 .callbacks_container {
 
-  	margin-bottom: 50px;
-
   	position: relative;
 
   	float: left;
@@ -1580,17 +1578,17 @@ a:active {
 
 	right: -51.5%;
 
-	height: 80%;
+	height: 100%;
 
-	padding: 5% 20px;
+	padding: 0 20px;
 
 	font-family: 'Droid Sans', sans-serif;
 	
   }
 
-.callbacks .caption span{
+.callbacks .caption span.title-c{
 
-	margin-bottom: 8px;
+	margin-top: 20px;
 
 	clear: both;
 
@@ -1607,6 +1605,14 @@ a:active {
 	font-size: 18px;
 
 	}
+
+.callbacks .caption span.content-c{
+
+	margin-top: 20px;
+
+	display: block;
+
+}
 
 .btn-slider{
 
@@ -1627,8 +1633,6 @@ a:active {
 	clear: both !important;
 
 	display: block !important;
-
-	margin-top: 20px;
 	
 }
 
@@ -1828,6 +1832,8 @@ a:active {
 	float: left;
 	
 	width: 100%;
+
+	margin-bottom: 50px;
 
 }
 

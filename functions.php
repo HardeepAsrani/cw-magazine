@@ -286,8 +286,8 @@ function cw_magazine_slider(){
 						
 						if(($cwp_slide_caption_text1 != '') && ($cwp_slide_caption_title1 != '')):
 							echo '<p class="caption">';
-								echo '<span>'.$cwp_slide_caption_title1.'</span>';
-								echo $cwp_slide_caption_text1;
+								echo '<span class="title-c">'.$cwp_slide_caption_title1.'</span>';
+								echo '<span class="content-c">'.$cwp_slide_caption_text1.'</span>';
 								echo '<br>';
 								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
@@ -303,8 +303,8 @@ function cw_magazine_slider(){
 						
 						if(($cwp_slide_caption_text2 != '') && ($cwp_slide_caption_title2 != '')):
 							echo '<p class="caption">';
-								echo '<span>'.$cwp_slide_caption_title2.'</span>';
-								echo $cwp_slide_caption_text2;
+								echo '<span class="title-c">'.$cwp_slide_caption_title1.'</span>';
+								echo '<span class="content-c">'.$cwp_slide_caption_text1.'</span>';
 								echo '<br>';
 								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
@@ -320,8 +320,8 @@ function cw_magazine_slider(){
 						
 						if(($cwp_slide_caption_text3 != '') && ($cwp_slide_caption_title3 != '')):
 							echo '<p class="caption">';
-								echo '<span>'.$cwp_slide_caption_title3.'</span>';
-								echo $cwp_slide_caption_text3;
+								echo '<span class="title-c">'.$cwp_slide_caption_title1.'</span>';
+								echo '<span class="content-c">'.$cwp_slide_caption_text1.'</span>';
 								echo '<br>';
 								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
@@ -337,8 +337,8 @@ function cw_magazine_slider(){
 						
 						if(($cwp_slide_caption_text4 != '') && ($cwp_slide_caption_title4 != '')):
 							echo '<p class="caption">';
-								echo '<span>'.$cwp_slide_caption_title4.'</span>';
-								echo $cwp_slide_caption_text4;
+								echo '<span class="title-c">'.$cwp_slide_caption_title1.'</span>';
+								echo '<span class="content-c">'.$cwp_slide_caption_text1.'</span>';
 								echo '<br>';
 								echo '<span class="btn-slider">Read more</span>';
 							echo '</p>';
