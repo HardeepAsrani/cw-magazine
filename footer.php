@@ -28,13 +28,14 @@
 		  <?php dynamic_sidebar( 'Footer4' ); ?>
         <?php endif; ?>
         
-        <?php 
-		if(get_theme_mod('cw_copyright')):
-			echo '<div class="copyright">';
-			echo get_theme_mod('cw_copyright');
-			echo '</div>';
-        endif;
-		?>
+		<div class="copyright">
+			<?php 
+			if(get_theme_mod('cw_copyright')):
+				echo get_theme_mod('cw_copyright');
+			endif;
+			?>
+			<a href="http://themeisle.com/themes/cw-magazine/?utm_source=themefooter&utm_medium=logo&utm_campaign=themefooter" target="_blank">CW Magazine</a><?php _e(' powered by ','cwp'); ?><a href="http://wordpress.org/" target="_blank"><?php _e('WordPress','cwp'); ?></a>
+		</div>
         
         <div class="clear"></div>
     </div><!-- .container -->
