@@ -10,7 +10,7 @@ Author URI: http://themeisle.com/
 
 Description: CW Magazine is a easily customizable WordPress Theme with numerous theme options and a beautiful design.  
 
-Version: 1.0.9
+Version: 1.0.8
 
 License: GNU General Public License version 2
 
@@ -1187,8 +1187,6 @@ a:active {
 	float: right;
 
 	margin: 7px 5px 7px 0;
-	
-	position: relative;
 
 	}
 
@@ -1227,12 +1225,6 @@ a:active {
 	height: 23px;
 
 	margin-left: -27px;
-	
-	position: absolute;
-	
-	right: 0;
-	
-	top: 0;
 		
 }
 
@@ -2173,8 +2165,6 @@ h1.entry-title{
 	word-wrap: break-word;
 
 	line-height: 34px;
-	margin-top:20px;
-	margin-bottom:-15px;
 
     color: #eab040;
 
