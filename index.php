@@ -33,7 +33,7 @@ get_header(); ?>
 							echo '</a>';
 							$cat = get_the_category();
 							if(!empty($cat)) :
-								_e(' - In: ','cwp');
+								_e(' - In: ','cw-magazine');
 								foreach($cat as $cat_item):
 									echo '<a class="sub-link" href="'.get_category_link($cat_item->cat_ID).'">'.$cat_item->cat_name.'</a> ';
 								endforeach;

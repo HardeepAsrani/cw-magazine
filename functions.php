@@ -20,6 +20,7 @@ function cw_magazine_setup() {
 	 * If you're building a theme based on cw-magazine, use a find and replace
 	 * to change 'cw-magazine' to the name of your theme in all the template files
 	 */
+	 
 	load_theme_textdomain( 'cw-magazine', get_template_directory() . '/languages' );
 
 	/**
@@ -289,7 +290,7 @@ function cw_magazine_slider(){
 								echo '<span class="title-c">'.$cwp_slide_caption_title1.'</span>';
 								echo '<span class="content-c">'.$cwp_slide_caption_text1.'</span>';
 								echo '<br>';
-								echo '<span class="btn-slider">Read more</span>';
+								echo '<span class="btn-slider">'.__('Read more','cw-magazine').'</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
@@ -306,7 +307,7 @@ function cw_magazine_slider(){
 								echo '<span class="title-c">'.$cwp_slide_caption_title2.'</span>';
 								echo '<span class="content-c">'.$cwp_slide_caption_text2.'</span>';
 								echo '<br>';
-								echo '<span class="btn-slider">Read more</span>';
+								echo '<span class="btn-slider">'.__('Read more','cw-magazine').'</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
@@ -323,7 +324,7 @@ function cw_magazine_slider(){
 								echo '<span class="title-c">'.$cwp_slide_caption_title3.'</span>';
 								echo '<span class="content-c">'.$cwp_slide_caption_text3.'</span>';
 								echo '<br>';
-								echo '<span class="btn-slider">Read more</span>';
+								echo '<span class="btn-slider">'.__('Read more','cw-magazine').'</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
@@ -340,7 +341,7 @@ function cw_magazine_slider(){
 								echo '<span class="title-c">'.$cwp_slide_caption_title4.'</span>';
 								echo '<span class="content-c">'.$cwp_slide_caption_text4.'</span>';
 								echo '<br>';
-								echo '<span class="btn-slider">Read more</span>';
+								echo '<span class="btn-slider">'.__('Read more','cw-magazine').'</span>';
 							echo '</p>';
 						endif;
 					echo '</a>';
@@ -463,10 +464,18 @@ function cw_magazine_show_posts($name_categ, $id_cat){
         
 } 
 
-add_filter( 'the_title', 'cw_no_title'); 
-function cw_no_title ($title) { 
+add_filter( 'the_title', 'cw_magazine_no_title'); 
+function cw_magazine_no_title ($title) { 
     if( $title == "" ){ 
         $title = "(No title)"; 
     } 
     return $title; 
 }
+function cw_magazine_registers() {
+	
+	wp_register_style( 'cw_magazine_customizer_css', get_template_directory_uri().'/css/cw_magazine_customizer_css.css');
+	wp_enqueue_style( 'cw_magazine_customizer_css' );
+ 
+}
+add_action( 'customize_controls_enqueue_scripts', 'cw_magazine_registers' );
+ 

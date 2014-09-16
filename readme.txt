@@ -1,14 +1,14 @@
-=== CW Magazine v2 ===
+=== CW Magazine ===
 Contributors:		Codeinwp
 Tags:				black, blue, gray, green, purple, red, white, light, one-column, two-columns, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, post-formats
 Requires at least:	3.3.0
-Tested up to:		3.8
-CW Magazine v2
+Tested up to:		4.0
+ CW Magazine 
 == Description ==
-CW Magazine v2 is a easily customizable WordPress Theme with numerous theme options and a beautiful design.  
+ CW Magazine  is a easily customizable WordPress Theme with numerous theme options and a beautiful design.  
 
 = License =
-Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public Licemse.
+Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License v2.
 The exceptions to this license are as follows: 
 
 

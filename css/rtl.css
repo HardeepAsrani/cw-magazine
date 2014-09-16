@@ -1,121 +1,3 @@
-/*
-
-Theme Name: CW Magazine
-
-Theme URI: http://themeisle.com/themes/cw-magazine/
-
-Author: codeinwp
-
-Author URI: Codeinwp.com
-
-Description: CW Magazine is a easily customizable WordPress Theme with numerous theme options and a beautiful design.  
-
-Version: 1.0.10
-
-License: GNU General Public License version 2
-
-License URI: license.txt
-
-Text Domain: cw-magazine
-
-Domain Path: /languages
-
-Tags: black, blue, gray, green, purple, red, white, light, one-column, two-columns, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, post-formats
-
-This theme, like WordPress, is licensed under the GPL.
-
-Use it to make something cool, have fun, and share what you've learned with others.
-
-
-
-*/
-
-
-
-
-
-
-
-/*
-
- * ----------------------------------------------------------------------------
-
- *
-
- * Table of Contents:
-
-   -----------------------------------------------------------------------------
-
- 1.0 =Reset
-
- 2.0 =Global
-
-	2.1 =Headings
-
-	2.2 =Text elements
-
-	2.3 =Links 
-
- 	2.4 =Clearing 
-
- 3.0 =Main Menu
-
- 4.0 =Header
-
- 	4.1 =Main Menu
-
- 	4.2 =Header Top Menu
-
- 5.0 =Slide
-
- 6.0 =Content
-
- 	6.1 =Content homepage
-
- 	6.3 =Contact page
-
- 7.0 =Article
-
- 8.0 =Post
-
- 9.0  =Asides
-
- 10.0 =Media
-
- 11.0 =Navigation
-
- 12.0 =Comments
-
- 13.0 =Sidebar
-
- 14.0 =Widgets
-
- 15.0 =Footer
-
- 16.0 =Social icons
-
- 17.0 =Responsive
-
- * ----------------------------------------------------------------------------
-
- */
-
-
-
-
-
-/* 1.0 =Reset
-
--------------------------------------------------------------- */
-
-
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
-
-
-
 html, body, div, span, applet, object, iframe,
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -167,6 +49,9 @@ html {
 body{
 
 	background-color: #FCFCFC;
+	direction: rtl;
+	  unicode-bidi: embed;
+	  text-align: right;
 
 }
 
@@ -210,7 +95,7 @@ caption, th, td {
 
 	font-weight: normal;
 
-	text-align: left;
+	text-align: right;
 
 }
 
@@ -302,23 +187,23 @@ textarea {
 
 .left{
 
-	float: left;
+	float: right;
 
 	}
 
 .right{
 
-	float: right;
+	float: left;
 
 	}
 
 .half-page{
 
-	float: left;
+	float: right;
 
 	width: 48%;
 
-	margin-right: 2%;
+	margin-left: 2%;
 
 	margin-bottom: 10px;
 
@@ -401,7 +286,7 @@ hr {
 
 
 
-/* 2.2 =Text elements 
+/* 2.2 =Text elements
 
 -------------------------------------------------------------- */
 
@@ -417,7 +302,7 @@ p {
 
 ul, ol {
 
-	margin: 0 0 1.5em 3em;
+	margin: 0 3em 1.5em 0;
 
 }
 
@@ -439,7 +324,7 @@ li > ol {
 
 	margin-bottom: 0;
 
-	margin-left: 1.5em;
+	margin-right: 1.5em;
 
 }
 
@@ -587,7 +472,7 @@ th {
 
 img {
 
-	height: auto; /* Make sure images are scaled correctly. */
+	height: auto; /* Make sure ../images are scaled correctly. */
 
 	max-width: 100%; /* Adhere to container width. */
 
@@ -759,7 +644,7 @@ textarea {
 
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
 
-	padding-left: 3px;
+	padding-right: 3px;
 
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 
@@ -777,7 +662,7 @@ input[type="search"] {
 
 
 
-/* 2.3 =Links 
+/* 2.3 =Links
 
 -------------------------------------------------------------- */
 
@@ -812,9 +697,9 @@ a:active {
 
 	display: inline;
 
-	float: left;
+	float: right;
 
-	margin-right: 1.5em;
+	margin-left: 1.5em;
 
 }
 
@@ -822,9 +707,9 @@ a:active {
 
 	display: inline;
 
-	float: right;
+	float: left;
 
-	margin-left: 1.5em;
+	margin-right: 1.5em;
 
 }
 
@@ -862,7 +747,7 @@ a:active {
 
 	border-radius: 3px;
 
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
 
 	clip: auto !important;
 
@@ -876,7 +761,7 @@ a:active {
 
 	height: auto;
 
-	left: 5px;
+	right: 5px;
 
 	line-height: normal;
 
@@ -894,7 +779,7 @@ a:active {
 
 
 
-/* 2.4 =Clearing 
+/* 2.4 =Clearing
 
 -------------------------------------------------------------- */
 
@@ -942,7 +827,7 @@ a:active {
 
 	display: block;
 
-	float: left;
+	float: right;
 
 }
 
@@ -952,7 +837,7 @@ a:active {
 
 	margin: 0;
 
-	padding-left: 0;
+	padding-right: 0;
 
 }
 
@@ -961,24 +846,24 @@ a:active {
 	position: relative;
 
 	display: inline-block;
-	
-	border-left: 1px solid rgba(255,255,255, 0.1);
 
-	border-right: 1px solid rgba(0,0,0,0.2);
-	
-	margin-right: -3px;
+	border-right: 1px solid rgba(255,255,255, 0.1);
+
+	border-left: 1px solid rgba(0,0,0,0.2);
+
+	margin-left: -3px;
 
 }
 
 .main-menu .main-navigation > ul > li:first-child{
 
-	border-left: none;
+	border-right: none;
 
 }
 
 .main-menu .main-navigation > ul > li:last-child {
 
-	border-right: none;
+	border-left: none;
 
 }
 
@@ -991,28 +876,30 @@ a:active {
 	padding: 10px 20px;
 
 	color: #cddfe4;
-	
+
 	font-family: 'Droid Sans', sans-serif;
-	
+
 	font-weight: 700;
-	
+
 	text-transform: uppercase;
-	
+
 	font-size: 11px;
 
 }
 
 .main-menu .main-navigation ul ul {
 
+	width: 200px;
+
 	display: none;
 
-	float: left;
+	float: right;
 
 	position: absolute;
 
 		top: 38px;
 
-		left: 0;
+		right: 0;
 
 	z-index: 99999;
 
@@ -1022,7 +909,7 @@ a:active {
 
 .main-menu .main-navigation ul ul ul {
 
-	left: 100%;
+	right: 100%;
 
 	top: 0;
 
@@ -1075,7 +962,7 @@ a:active {
 
 /* 4.0 =Header
 
------------------------------------------------ */	
+----------------------------------------------- */
 
 .site-header{}
 
@@ -1085,30 +972,30 @@ a:active {
 
 	clear: both;
 
-	}	
+	}
 
 .header-middle-wrap{
 
 	width: 100%;
-	
-	float: left;
-	
+
+	float: right;
+
 	border-top: 1px solid rgba(255,255,255, 0.5);
 
-    background-image: url(images/shadow-header.png);
-    
+    background-image: url(../images/shadow-header.png);
+
     background-color: #008fb8;
-    
+
     background-position: bottom;
-    
+
     background-repeat: repeat-x;
 }
 
 .logo{
 
-	float: left;
+	float: right;
 
-	text-align: left;
+	text-align: right;
 
 	}
 
@@ -1118,31 +1005,17 @@ a:active {
 
 	font-size: 30px;
 
+	text-align: center;
+
 	text-decoration: none;
 
 	line-height: 42px;
 
 	color: #eab040;
 
+	padding: 20px;
+
 	}
-
-.logo a.site-description-a {
-	padding-top: 0px;
-	padding-left: 0px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-}
-
-.logo a.site-title-a {
-	padding-left: 0px;
-	padding-bottom: 5px;
-	padding-top: 20px;
-	padding-right: 20px;
-}
-
-.logo a.site-logo-a {
-	padding:20px 20px 20px 0px;
-}
 
 .logo a:hover{
 
@@ -1158,11 +1031,11 @@ a:active {
 
 	line-height: 16px;
 
-	}	
+	}
 
 .ad-header{
 
-	float: right;
+	float: left;
 
 	padding: 25px 0px 20px;
 
@@ -1178,22 +1051,22 @@ a:active {
 
 	}
 
-	
+
 
 /* 4.1 =Main Menu
 
------------------------------------------------ */	
+----------------------------------------------- */
 
 .main-menu{
 
-	float: left;
+	float: right;
 
 	width: 100%;
 
 	clear: both;
 
 	background-color: #075e77;
-	
+
 	}
 
 
@@ -1202,11 +1075,9 @@ a:active {
 
 .main-menu .search-form{
 
-	float: right;
+	float: left;
 
-	margin: 7px 5px 7px 0;
-	
-	position: relative;
+	margin: 7px 0 7px 5px;
 
 	}
 
@@ -1225,7 +1096,7 @@ a:active {
 	border-radius: 0;
 
 	width: 150px;
-	
+
 	background: transparent;
 
 	background: rgba(255,255,255,.1);
@@ -1236,7 +1107,7 @@ a:active {
 
 .main-menu .search-form input[type="submit"]{
 
-	background: url(images/magnifier-icon.png) 5px 5px no-repeat;
+	background: url(../images/magnifier-icon.png) 5px 5px no-repeat;
 
 	text-indent: -99999px;
 
@@ -1244,14 +1115,8 @@ a:active {
 
 	height: 23px;
 
-	margin-left: -27px;
-	
-	position: absolute;
-	
-	right: 0;
-	
-	top: 0;
-		
+	margin-right: -27px;
+
 }
 
 .main-menu .search-form .bg-input-search{
@@ -1280,7 +1145,7 @@ a:active {
 
 .header-top{
 
-	float: left;
+	float: right;
 
 	width: 98%;
 
@@ -1292,7 +1157,7 @@ a:active {
 
 .social-icons-header{
 
-	float: right;
+	float: left;
 
 	margin-top: 5px;
 
@@ -1300,11 +1165,11 @@ a:active {
 
 .header-top .main-navigation {
 
-	float: left;
+	float: right;
 
 	display: block;
 
-	float: left;
+	float: right;
 
 	}
 
@@ -1314,14 +1179,14 @@ a:active {
 
 	margin: 0;
 
-	padding-left: 0;
+	padding-right: 0;
 
 	}
 
 .header-top .main-navigation li, .header-top .container .menu ul li {
 	list-style:none;
 
-	float: left;
+	float: right;
 
 	position: relative;
 
@@ -1338,9 +1203,9 @@ a:active {
 	font-size: 12px;
 
 	color: #939598;
-	
+
 	font-family: 'Droid Sans', sans-serif;
-	
+
 	font-weight: 400;
 
 	}
@@ -1348,22 +1213,24 @@ a:active {
 .header-top .main-navigation .current_page_item a {
 
 	font-weight: 700;
-	
+
 	color: #FFFFFF;
 
 }
 
 .header-top .main-navigation ul ul {
 
+	width: 200px;
+
 	display: none;
 
-	float: left;
+	float: right;
 
 	position: absolute;
 
 		top: 26px;
 
-		left: 0;
+		right: 0;
 
 	z-index: 99999;
 
@@ -1373,7 +1240,7 @@ a:active {
 
 .header-top .main-navigation ul ul ul {
 
-	left: 100%;
+	right: 100%;
 
 	top: 0;
 
@@ -1475,7 +1342,7 @@ a:active {
 
   	float: none;
 
-  	margin-right: 1px;
+  	margin-left: 1px;
 
   	}
 
@@ -1497,7 +1364,7 @@ a:active {
 
 .rslides_tabs li:first-child {
 
-  	margin-left: 0;
+  	margin-right: 0;
 
   	}
 
@@ -1521,7 +1388,7 @@ a:active {
 
   	position: relative;
 
-  	float: left;
+  	float: right;
 
   	width: 66%;
 
@@ -1550,7 +1417,7 @@ a:active {
 
   	width: 100%;
 
-  	left: 0;
+  	right: 0;
 
   	top: 0;
 
@@ -1575,7 +1442,7 @@ a:active {
 .callbacks .caption {
 
 	display: block;
-	
+
 	position: absolute;
 
 	z-index: 2;
@@ -1593,23 +1460,23 @@ a:active {
 	margin: 0;
 
 	border-style: solid;
-	
-	border-top: none;
 
-	border-right: none;
+	border-top: none;
 
 	border-left: none;
 
+	border-right: none;
+
 	width: 46%;
 
-	right: -51.5%;
+	left: -51.5%;
 
 	height: 100%;
 
 	padding: 0 20px;
 
 	font-family: 'Droid Sans', sans-serif;
-	
+
   }
 
 .callbacks .caption span.title-c{
@@ -1621,7 +1488,7 @@ a:active {
 	display: block;
 
 	color: #FFF;
-	
+
 	font-family: 'Droid Sans', sans-serif;
 
 	font-weight: 700;
@@ -1644,7 +1511,7 @@ a:active {
 
 	background: #eab040;
 
-	float: left;
+	float: right;
 
 	padding: 5px 10px;
 
@@ -1659,13 +1526,13 @@ a:active {
 	clear: both !important;
 
 	display: block !important;
-	
+
 }
 
 .btn-slider:hover{
-	
+
 	color: #000000 !important;
-	
+
 	background: #FFF;
 
 }
@@ -1678,7 +1545,7 @@ a:active {
 
   	top: 52%;
 
-  	left: 0;
+  	right: 0;
 
   	opacity: 0.7;
 
@@ -1694,7 +1561,7 @@ a:active {
 
   	width: 38px;
 
-  	background: transparent url("images/themes.gif") no-repeat left top;
+  	background: transparent url("../images/themes.gif") no-repeat right top;
 
   	margin-top: -45px;
 
@@ -1708,11 +1575,11 @@ a:active {
 
 .callbacks_nav.next {
 
-  	left: auto;
+  	right: auto;
 
-  	background-position: right top;
+  	background-position: left top;
 
-  	right: 0;
+  	left: 0;
 
   	}
 
@@ -1744,7 +1611,7 @@ a:active {
 
 	width: 100%;
 
-	left: 0;
+	right: 0;
 
 	top: 0;
 
@@ -1756,7 +1623,7 @@ a:active {
 
 	display: block;
 
-	float: left;
+	float: right;
 
  	}
 
@@ -1766,7 +1633,7 @@ a:active {
 
 	height: auto;
 
-	float: left;
+	float: right;
 
 	width: 100%;
 
@@ -1776,14 +1643,14 @@ a:active {
 
 .callbacks_tabs{
 
-	right: 25px;
+	left: 25px;
 
 	top: 10px;
 
 	position: absolute;
 
 	z-index: 99;
-	
+
 	overflow: hidden;
 
 	}
@@ -1798,9 +1665,9 @@ a:active {
 
 	display: inline;
 
-	float: left;
+	float: right;
 
-	margin: 0 5px 0 0;
+	margin: 0 0 0 5px;
 
 	}
 
@@ -1812,9 +1679,9 @@ a:active {
 
 	text-indent: 999999px;
 
-	float: left;
+	float: right;
 
-	margin-right: 10px;
+	margin-left: 10px;
 
 	-webkit-border-radius: 50%;
 
@@ -1855,8 +1722,8 @@ a:active {
 
 	border-top-width: 3px;
 
-	float: left;
-	
+	float: right;
+
 	width: 100%;
 
 	margin-bottom: 50px;
@@ -1870,7 +1737,7 @@ a:active {
 
 .wrapper{
 
-	background-image: url(images/bg-page.jpg);
+	background-image: url(../images/bg-page.jpg);
     background-color: #ededed;
 
 }
@@ -1921,7 +1788,7 @@ a:active {
 
 .sidebar-left .content-area{
 
-	float: right;
+	float: left;
 
 	width: 63%;
 
@@ -1929,7 +1796,7 @@ a:active {
 
 .sidebar-right .content-area{
 
-	float: left;
+	float: right;
 
 	width: 63%;
 
@@ -1939,7 +1806,7 @@ a:active {
 
 .full-width .content-area{
 
-	float: left;
+	float: right;
 
 	width: 98%;
 
@@ -1959,7 +1826,7 @@ a:active {
 
 .template-page .content-area{
 
-	float: left;
+	float: right;
 
 	width: 63%;
 
@@ -1967,7 +1834,7 @@ a:active {
 
 .template-page .sidebar{
 
-	float: right;
+	float: left;
 
 	width: 34%;
 
@@ -1985,7 +1852,7 @@ widget_tag_cloud a{
 
 .readmore {
 	padding:10px;
-	float:right;
+	float:left;
 }
 
 .customfp ul{
@@ -1995,10 +1862,10 @@ widget_tag_cloud a{
 	min-height: 520px;
 
 }
-	
+
 .front-page-boxes ul	{
 	margin: 0;
-}	
+}
 
 .front-page-boxes ul li{
 
@@ -2008,7 +1875,7 @@ widget_tag_cloud a{
 
 	min-height: 75px;
 
-	float: left;
+	float: right;
 
 	clear: both;
 
@@ -2022,7 +1889,7 @@ widget_tag_cloud a{
 
 .front-page-boxes ul li a{
 
-	color:  #2e3f42;
+	color: #2e3f42;
 
 	text-decoration: none;
 
@@ -2034,13 +1901,13 @@ widget_tag_cloud a{
 
 	font-family: 'Open Sans', sans-serif;
 
-	font-size: 13px;	
+	font-size: 13px;
 
 	}
 
 .front-page-boxes ul li a:hover{
 
-	color: #000;
+	color: #eab040
 
 	}
 
@@ -2054,9 +1921,9 @@ widget_tag_cloud a{
 
 	border-top: none;
 
-	border-left: none;
-
 	border-right: none;
+
+	border-left: none;
 
 	width: 100%;
 
@@ -2065,7 +1932,7 @@ widget_tag_cloud a{
 	padding: 2px 0 2px 0 !important;]
 
 	}
-	
+
 .title-categ span{
 
 	font-size: 12px;
@@ -2073,7 +1940,7 @@ widget_tag_cloud a{
 	color: #FFF;
 
 	background-color: #eab040;
-	
+
 	padding: 0 10px 0 10px;
 
 	font-family: 'Droid Sans', sans-serif;
@@ -2094,25 +1961,25 @@ widget_tag_cloud a{
 
 .box-hp-big{
 
-	float: left;
+	float: right;
 
 	width: 100%;
 
 	}
 .box-hp-big .front-page-boxes:nth-child(odd){
-	
-	clear: left;
-	
+
+	clear: right;
+
 }
 .box-hp-big .front-page-boxes:nth-child(even){
-	
-	clear: right;
-	
+
+	clear: left;
+
 }
 
 /* 6.2 =Contact page
 
------------------------------------------------ */	
+----------------------------------------------- */
 
 .cotnact-form-wrap{
 
@@ -2144,7 +2011,7 @@ widget_tag_cloud a{
 
 	width: 50px;
 
-	float: left;
+	float: right;
 
 	display: inline-block;
 
@@ -2235,11 +2102,11 @@ article{
 article .entry-content{
 
     margin: 10px 0 0 0;
-    
+
     background: #FFF;
-    
+
     padding: 20px 10px 0 10px;
-	
+
 	border-top-color: #eab040;
 
 	border-top-style: solid;
@@ -2249,7 +2116,7 @@ article .entry-content{
 	}
 
 article .entry-content p{
-    
+
     color: #363636;
 
     text-decoration: none;
@@ -2268,12 +2135,12 @@ article .entry-content p{
 
     margin-bottom: 0;
 
-    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-right: -10px;
 
     margin-left: -10px;
 
-    margin-right: -10px;
-    
     clear: both;
 
     }
@@ -2297,14 +2164,14 @@ article .entry-content p{
 .entry-meta a:hover{
 
     color: #eab040;
-    
+
 }
 
 .author-link a{
 
-    padding-left: 18px;
+    padding-right: 18px;
 
-    background: url(images/icon-meta.png) 0 0 no-repeat;
+    background: url(../images/icon-meta.png) 0 0 no-repeat;
 
     font-size: 11px;
 
@@ -2317,23 +2184,23 @@ article .entry-content p{
     color: #a0a3a5;
 
     text-decoration: none;
-    
-    margin-left: 10px;
+
+    margin-right: 10px;
 
 }
 
 .author-link a:hover,
 .comments-number:hover{
-    
+
     color: #eab040;
-    
+
 }
 
 .comments-number{
-    
-    padding-left: 18px;
 
-    background: url(images/icon-meta.png) 0px -41px no-repeat;
+    padding-right: 18px;
+
+    background: url(../images/icon-meta.png) 0px -41px no-repeat;
 
     font-size: 11px;
 
@@ -2347,14 +2214,14 @@ article .entry-content p{
 
     text-decoration: none;
 
-    margin-left: 20px;
-    
+    margin-right: 20px;
+
 }
 .post-time{
 
-    padding-left: 18px;
+    padding-right: 18px;
 
-    background: url(images/icon-meta.png) 0px -85px no-repeat;
+    background: url(../images/icon-meta.png) 0px -85px no-repeat;
 
     font-size: 11px;
 
@@ -2370,26 +2237,26 @@ article .entry-content p{
 
     line-height: 20px;
 
-    float: right;
+    float: left;
 
-    margin-right: 20px;
-    
+    margin-left: 20px;
+
 }
 
 h1.page-title{
 
 	border-width: 1px;
 
-	padding: 15px 15px 0 0;
+	padding: 15px 0 0 15px;
 
 	margin-bottom: 10px;
 
     color: #eab040;
 
     font-size: 24px;
-    
+
     text-transform: uppercase;
-    
+
     font-family: 'Droid Sans', sans-serif;
 
     font-weight: 700;
@@ -2397,11 +2264,11 @@ h1.page-title{
 	}
 
 h1.page-title span{
-	
+
 	font-size: 24px;
-	
+
 	color: #000000;
-	
+
 }
 
 .page-header{
@@ -2432,39 +2299,39 @@ h1.page-title span{
     padding: 6px 0;
 
     margin-top: 20px;
-    
+
     margin-bottom: 20px;
 
 }
 .read-more-btn:hover{
-    
+
     color: #363636;
-    
+
 }
 
 .entry-content-right{
-    
+
     width: 140px;
 
-    float: right;
-    
-    margin-left: 20px;
-        
+    float: left;
+
+    margin-right: 20px;
+
 }
 
 .entry-content-right a{
 
-    float: right;
+    float: left;
 
 }
 
 /* 8.0 =Post
 
------------------------------------------------ */	
+----------------------------------------------- */
 
 .post .entry-header, .page .entry-header{
 
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 
 	}
 
@@ -2483,7 +2350,7 @@ h1.page-title span{
 /*	padding-left: 5px; */
 
 	margin-top: 5px;
-    
+
     background: none;
 
 }
@@ -2630,7 +2497,7 @@ object {
 
 [class*="navigation"] .nav-previous {
 
-	float: left;
+	float: right;
 
 	width: 50%;
 
@@ -2638,9 +2505,9 @@ object {
 
 [class*="navigation"] .nav-next {
 
-	float: right;
+	float: left;
 
-	text-align: right;
+	text-align: left;
 
 	width: 50%;
 
@@ -2661,9 +2528,9 @@ object {
 .navigation{
 
 	margin-top: -20px;
-	
+
 	background: rgba(255,255,255, .5);
-	
+
 }
 
 .pagination {
@@ -2682,9 +2549,9 @@ object {
 
 	display: block;
 
-	float: left;
+	float: right;
 
-	margin: 2px 2px 2px 0;
+	margin: 2px 0 2px 2px;
 
 	padding: 6px 9px 5px 9px;
 
@@ -2695,7 +2562,7 @@ object {
 	color: #2e3f42;
 
 
-	} 
+	}
 
 .pagination a:hover{
 
@@ -2703,7 +2570,7 @@ object {
 
 	color: #FAFAFA;
 
-	} 
+	}
 
 .pagination .current{
 
@@ -2722,8 +2589,8 @@ object {
 ----------------------------------------------- */
 
 .comment-list{
-    
-    margin-left: 0;
+
+    margin-right: 0;
 }
 
 .comment-list li {
@@ -2782,15 +2649,15 @@ p.fn, .commentmetadata{
 
 .avarat_comment{
 
-	float: left;
+	float: right;
 
 	}
 
 .commentmeta_wrap{
 
-	float: left;
+	float: right;
 
-	margin: 25px 0 0 15px;
+	margin: 25px 15px 0 0;
 
 	}
 
@@ -2840,13 +2707,13 @@ p.fn, .commentmetadata{
 
 .sidebar-left .sidebar{
 
-	float: left;
+	float: right;
 
 	}
 
 .sidebar-right .sidebar{
 
-	float: right;
+	float: left;
 
 	}
 
@@ -2870,7 +2737,7 @@ p.fn, .commentmetadata{
     font-family: 'Open Sans', sans-serif;
 
     font-size: 13px;
-    
+
     }
 
 /* 14.0 =Widgets
@@ -2901,9 +2768,9 @@ header .widget {
 
 	border-top: none;
 
-	border-left: none;
-
 	border-right: none;
+
+	border-left: none;
 
 	margin-bottom: 20px;
 
@@ -2918,21 +2785,21 @@ header .widget {
 .widget-title span{
 
     font-size: 12px;
-    
+
     color: #FFF;
-    
+
     background-color: #eab040;
-    
+
     padding: 0 10px 0 10px;
-    
+
     font-family: 'Droid Sans', sans-serif;
-    
+
     font-weight: 700;
-    
+
     text-transform: uppercase;
-    
+
     min-width: 150px;
-    
+
     display: inline-block;
 
 }
@@ -2940,20 +2807,20 @@ header .widget {
 .widget-title a{
 
 	font-size: 12px;
-    
+
     color: #FFF;
-    
+
     font-family: 'Droid Sans', sans-serif;
-    
+
     font-weight: 700;
-    
+
     text-transform: uppercase;
 
 }
 
 .widget ul{
 
-	margin: 0px 0 0 15px;
+	margin: 0px 15px 0 0;
 
 	}
 
@@ -2966,7 +2833,7 @@ header .widget {
 	color: #eab040;
 
     list-style-type: square;
-    
+
     font-family: 'Open Sans', sans-serif;
 
     }
@@ -2994,9 +2861,9 @@ header .widget {
 .widget select {
 
     max-width: 100%;
-    
+
     padding: 5px;
-    
+
     border: 1px solid #ccc;
 
     width: 100%;
@@ -3085,11 +2952,11 @@ header .widget {
 
 	width: 23%;
 
-	float: left;
-
-	margin-right: 1%;
+	float: right;
 
 	margin-left: 1%;
+
+	margin-right: 1%;
 
 	}
 
@@ -3131,7 +2998,7 @@ header .widget {
 
 .widget-footer ul{
 
-	margin: 0 0 0 15px;
+	margin: 0 15px 0 0;
 
 	}
 
@@ -3145,7 +3012,7 @@ header .widget {
 
 	content: '+';
 
-	padding-right: 5px;
+	padding-left: 5px;
 
 	color: #CCC;
 
@@ -3167,7 +3034,7 @@ header .widget {
 
 	padding: 6px 1%;
 
-	float: left;
+	float: right;
 
 	font-size: 11px;
 
@@ -3239,7 +3106,7 @@ a.symbol:before {
 
     content: attr(title);
 
-	margin-right: 0.3em;
+	margin-left: 0.3em;
 
     font-size: 200%;
 
@@ -3268,7 +3135,7 @@ a.symbol{
 	font-size: 29px;
 
 	margin-top: 4px;
-	
+
 	color: #FFF;
 
 	}
@@ -3327,12 +3194,12 @@ a.symbol{
 }
 .widget_calendar tfoot #prev a,
 .widget_calendar tfoot #prev a:hover {
-	text-align: left;
+	text-align: right;
 	background: none;
 }
 .widget_calendar tfoot #next a,
 .widget_calendar tfoot #next a:hover {
-	text-align: right;
+	text-align: left;
 	background: none;
 }
 .widget_calendar tbody a{
@@ -3353,9 +3220,9 @@ a.symbol{
 
 	}
 
-#nav .selected a, 
+#nav .selected a,
 
-#nav2 .selected a { 
+#nav2 .selected a {
 
 	color: red;
 
@@ -3371,7 +3238,7 @@ a.symbol{
 
 		width: 98%;
 
-		padding: inherit 1%; 
+		padding: inherit 1%;
 
 		}
 
@@ -3441,7 +3308,7 @@ a.symbol{
 
 	.sidebar{
 
-		float: left;
+		float: right;
 
 		width: 100% !important;
 
@@ -3449,7 +3316,7 @@ a.symbol{
 
 	.content-area{
 
-		float: left;
+		float: right;
 
 		width: 98% !important;
 
@@ -3479,7 +3346,7 @@ a.symbol{
 
 		float: none;
 
-		}	
+		}
 
 	.social-icons-header {
 
@@ -3511,7 +3378,7 @@ a.symbol{
 
 		}
 
-	.tinynav { 
+	.tinynav {
 
 		display: block;
 
@@ -3521,9 +3388,9 @@ a.symbol{
 
 		}
 
-	#nav, #nav2 { 
+	#nav, #nav2 {
 
-		display: none; 
+		display: none;
 
 		}
 
@@ -3539,15 +3406,15 @@ a.symbol{
 
 	}
 	.callbacks .caption{
-	
+
 		position: relative;
-		
-		right: 0;
-		
-		float: left;
-		
+
+		left: 0;
+
+		float: right;
+
 		width: 90%;
-		
+
 		padding: 20px 5%;
 
 	}
@@ -3586,8 +3453,6 @@ a.symbol{
 
 		margin: 0 auto;
 
-	}		
+	}
 
 }
-
-

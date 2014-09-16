@@ -4,7 +4,7 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+	<?php if ( is_search() ) : ?>
 	<div class="entry-summary">
         <h1 class="entry-title">
             <a href="<?php the_permalink(); ?>" rel="bookmark">

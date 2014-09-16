@@ -34,7 +34,7 @@
 				echo get_theme_mod('cw_copyright');
 			endif;
 			?>
-			<a href="http://themeisle.com/themes/cw-magazine/?utm_source=cw-magazine&utm_medium=link&utm_campaign=themefooter" target="_blank">CW Magazine</a><?php _e(' powered by ','cwp'); ?><a href="http://wordpress.org/" target="_blank"><?php _e('WordPress','cwp'); ?></a>
+			<a href="http://themeisle.com/themes/cw-magazine/?utm_source=cw-magazine&utm_medium=link&utm_campaign=themefooter" target="_blank">CW Magazine</a><?php _e(' powered by ','cw-magazine'); ?><a href="http://wordpress.org/" target="_blank"><?php _e('WordPress','cw-magazine'); ?></a>
 		</div>
         
         <div class="clear"></div>

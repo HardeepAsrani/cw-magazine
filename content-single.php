@@ -10,12 +10,12 @@
         </h1>
 		<div class="entry-meta post-entry-meta">
 			<?php
-				echo '<span class="posted-on">Posted on ';
+				echo '<span class="posted-on">'.__('Posted on','cw-magazine').' ';
 				?>
 					<a href="<?php echo get_month_link( get_the_time('Y'), get_the_time('m') ); ?>" title="<?php the_time('F j, Y '); ?>" class="blog-box-date"><?php the_time('F j, Y '); ?></a>
 				<?php
 				echo '</span>';
-				echo '<span class="byline"> by </span><span class="author vcard"><a href="'.get_author_posts_url( get_the_author_meta( 'ID' )).'" >'.get_the_author().'</a></span>';
+				echo '<span class="byline">'.__('by','cw-magazine'). ' </span><span class="author vcard"><a href="'.get_author_posts_url( get_the_author_meta( 'ID' )).'" >'.get_the_author().'</a></span>';
 			?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->

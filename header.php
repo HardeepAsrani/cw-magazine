@@ -70,26 +70,37 @@
             <div class="logo">
     
     
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php 
+
 						if( get_theme_mod('logo_header') ):
-							echo '<img src="'.get_theme_mod('logo_header').'" alt="'.get_bloginfo( 'name' ).'" />';
+
+							echo '<a class="site-logo-a" href="'.esc_url( home_url( '/' ) ).'" title="'.esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">';
+
+								echo '<img src="'.get_theme_mod('logo_header').'" alt="'.get_bloginfo( 'name' ).'" />';
+
+							echo '</a>';
+
 						else:    
-							echo get_bloginfo( 'name' ); 
-							echo '<span >'.get_bloginfo( 'description' ).'</span>'; 
+
+							echo '<a class="site-title-a" href="'.esc_url( home_url( '/' ) ).'" title="'.esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home"><h1 class="site-title">'.get_bloginfo( 'name' ).'</h1></a>'; 
+
+							echo '<a class="site-description-a" href="'.esc_url( home_url( '/' ) ).'" title="'.esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">';
+
+							echo '<span class="site-description">'.get_bloginfo( 'description' ).'</span>'; 
+
+							echo '</a>';
+
 						endif;
+
 					?>
-                </a>
             </div><!-- .logo -->
     
-            <div class="ad-header">
-    
-                <?php if ( is_active_sidebar( 'ad-banner' ) ) : ?>
-                      <?php dynamic_sidebar( 'ad-banner' ); ?>
-                <?php endif; ?>
-    
-            </div>
-        
+            <?php if ( is_active_sidebar( 'ad-banner' ) ) : ?>
+				<?php echo '<div class="ad-header">'; ?>
+                <?php dynamic_sidebar( 'ad-banner' ); ?>
+				<?php echo '</div>'; ?>
+            <?php endif; ?>
+				
             <div class="main-menu">
                 <?php wp_nav_menu( 
 						array(	
