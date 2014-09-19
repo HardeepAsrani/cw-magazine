@@ -14,18 +14,17 @@ function cw_magazine_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	
-	$wp_customize->remove_section('colors');
-	
 	/* theme notes */
 	$wp_customize->add_section( 'codeinwp_theme_notes' , array(
 		'title'      => __('ThemeIsle theme notes','cw-magazine'),
 		'description' => sprintf( __( "Thank you for being part of this! We've spent almost 6 months building ThemeIsle without really knowing if anyone will ever use a theme or not, so we're very grateful that you've decided to work with us. Wanna <a href='http://themeisle.com/contact/' target='_blank'>say hi</a>?
-		<br/><br/><a href='http://themeisle.com/demo/?theme=CW Magazine' target='_blank' />View Theme Demo</a> | <a href='http://themeisle.com/forums/forum/cw-magazine' target='_blank'>Get theme support</a> | <a href='http://themeisle.com/documentation-cw-magazine/' target='_blank'>Documentation</a>")),
+		<br/><br/><a href='http://themeisle.com/demo/?theme=CW Magazine' target='_blank' />View Theme Demo</a> | <a href='http://themeisle.com/forums/forum/cw-magazine/' target='_blank'>Get theme support</a>")),
 		'priority'   => 30,
 	));
 	$wp_customize->add_setting(
-        'cwp_theme_notice'
+        'cwp_theme_notice' 
+		
+		
 	);
 	
 	$wp_customize->add_control(
@@ -42,7 +41,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 30
 	) );
 
-	$wp_customize->add_setting( 'cwp_slide_img1' );
+	$wp_customize->add_setting( 'cwp_slide_img1', array( 'sanitize_callback' => 'esc_url_raw' )  );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slider_image1', array(
 	    'label'    => __( 'Slider image 1', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -58,7 +57,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 2,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_title1' );
+	$wp_customize->add_setting( 'cwp_slide_caption_title1', array( 'sanitize_callback' => 'esc_attr' )  );
 	$wp_customize->add_control( 'cwp_slide_caption_title1', array(
 	    'label'    => __( 'Slider caption title 1', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -66,7 +65,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 3,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_text1' );
+	$wp_customize->add_setting( 'cwp_slide_caption_text1', array( 'sanitize_callback' => 'esc_attr' )  );
 	$wp_customize->add_control( 'cwp_slide_caption_text1', array(
 	    'label'    => __( 'Slider caption text 1', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -74,7 +73,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 4,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_img2' );
+	$wp_customize->add_setting( 'cwp_slide_img2' , array( 'sanitize_callback' => 'esc_url_raw' ) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slider_image2', array(
 	    'label'    => __( 'Slider image 2', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -90,7 +89,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 6,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_title2' );
+	$wp_customize->add_setting( 'cwp_slide_caption_title2', array( 'sanitize_callback' => 'esc_attr' )  );
 	$wp_customize->add_control( 'cwp_slide_caption_title2', array(
 	    'label'    => __( 'Slider caption title 2', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -98,7 +97,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 7,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_text2' );
+	$wp_customize->add_setting( 'cwp_slide_caption_text2', array( 'sanitize_callback' => 'esc_attr' )  );
 	$wp_customize->add_control( 'cwp_slide_caption_text2', array(
 	    'label'    => __( 'Slider caption text 2', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -106,7 +105,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 8,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_img3' );
+	$wp_customize->add_setting( 'cwp_slide_img3', array( 'sanitize_callback' => 'esc_url_raw' )  );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slider_image3', array(
 	    'label'    => __( 'Slider image 3', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -122,7 +121,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 10,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_title3' );
+	$wp_customize->add_setting( 'cwp_slide_caption_title3', array( 'sanitize_callback' => 'esc_attr' )  );
 	$wp_customize->add_control( 'cwp_slide_caption_title3', array(
 	    'label'    => __( 'Slider caption title 3', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -130,7 +129,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 11,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_text3' );
+	$wp_customize->add_setting( 'cwp_slide_caption_text3', array( 'sanitize_callback' => 'esc_attr' )  );
 	$wp_customize->add_control( 'cwp_slide_caption_text3', array(
 	    'label'    => __( 'Slider caption text 3', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -138,7 +137,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 12,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_img4' );
+	$wp_customize->add_setting( 'cwp_slide_img4', array( 'sanitize_callback' => 'esc_url_raw' )  );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_slider_image4', array(
 	    'label'    => __( 'Slider image 4', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -154,7 +153,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 14,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_title4' );
+	$wp_customize->add_setting( 'cwp_slide_caption_title4' , array( 'sanitize_callback' => 'esc_attr' ) );
 	$wp_customize->add_control( 'cwp_slide_caption_title4', array(
 	    'label'    => __( 'Slider caption title 4', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -162,7 +161,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 15,
 	) );
 	
-	$wp_customize->add_setting( 'cwp_slide_caption_text4' );
+	$wp_customize->add_setting( 'cwp_slide_caption_text4' , array( 'sanitize_callback' => 'esc_attr' ) );
 	$wp_customize->add_control( 'cwp_slide_caption_text4', array(
 	    'label'    => __( 'Slider caption text 4', 'cw-magazine' ),
 	    'section'  => 'cw_slider_section',
@@ -185,7 +184,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 	) );
 	
 	
-	$wp_customize->add_setting( 'cat1_slug', array('sanitize_callback' => 'cat_slug_sanitization') );
+	$wp_customize->add_setting( 'cat1_slug', array('sanitize_callback' => 'cwp_cat_slug_sanitization') );
 	$wp_customize->add_control(
 		'cat1_slug',
 		array(
@@ -201,7 +200,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 32
 	) );
 	
-	$wp_customize->add_setting( 'cat2_slug', array('sanitize_callback' => 'cat_slug_sanitization') );
+	$wp_customize->add_setting( 'cat2_slug', array('sanitize_callback' => 'cwp_cat_slug_sanitization') );
 	$wp_customize->add_control(
 		'cat2_slug',
 		array(
@@ -218,7 +217,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 33
 	) );
 	
-	$wp_customize->add_setting( 'cat3_slug', array('sanitize_callback' => 'cat_slug_sanitization') );
+	$wp_customize->add_setting( 'cat3_slug', array('sanitize_callback' => 'cwp_cat_slug_sanitization') );
 	$wp_customize->add_control(
 		'cat3_slug',
 		array(
@@ -234,7 +233,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 34
 	) );
 	
-	$wp_customize->add_setting( 'cat4_slug', array('sanitize_callback' => 'cat_slug_sanitization') );
+	$wp_customize->add_setting( 'cat4_slug', array('sanitize_callback' => 'cwp_cat_slug_sanitization') );
 	$wp_customize->add_control(
 		'cat4_slug',
 		array(
@@ -740,7 +739,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'cw_magazine_customize_register' );
 
-function cat_slug_sanitization( $input ) {
+function cwp_cat_slug_sanitization( $input ) {
     $cat_slugs = array();
 	$categories = get_categories();
 	foreach($categories as $categ):
@@ -757,6 +756,6 @@ function cat_slug_sanitization( $input ) {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function cw_magazine_customize_preview_js() {
-	wp_enqueue_script( 'cw_magazine_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'jquery' ), '20130508', true );
+	wp_enqueue_script( 'cw_magazine_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'cw_magazine_customize_preview_js' );

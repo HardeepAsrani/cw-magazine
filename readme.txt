@@ -1,16 +1,17 @@
-=== CW Magazine ===
-Contributors:		Codeinwp
+=== CW Magazine  ===
+Contributors:		themeisle.com
 Tags:				black, blue, gray, green, purple, red, white, light, one-column, two-columns, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, post-formats
 Requires at least:	3.3.0
 Tested up to:		4.0
- CW Magazine 
+CW Magazine 
 == Description ==
- CW Magazine  is a easily customizable WordPress Theme with numerous theme options and a beautiful design.  
+CW Magazine  is a easily customizable WordPress Theme with numerous theme options and a beautiful design.
 
 = License =
-Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License v2.
-The exceptions to this license are as follows: 
 
+CW Magazine theme, Copyright (C) 2013 ThemeIsle.com
+CW Magazine theme is licensed under the GPL3.
+CW Magazine is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
 * ResponsiveSlides.js v1.54
 Licensed under the MIT license.
@@ -42,3 +43,7 @@ Copyright: Steve Matteson
 * Droid Sans font
 License: Distributed under the terms of Apache License ( http://www.apache.org/licenses/LICENSE-2.0 )
 Copyright: Steve Matteson
+
+* MonoSocial Icons Font
+License:  Licensed under the Open Font License. (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+Copyright: Ivan Drinchev

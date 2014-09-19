@@ -12,51 +12,38 @@
  */
 get_header(); ?>
 
+	<?php if(get_theme_mod('cwp_slide_img1')) { ?>
 	<div class="hp-slider-wrap">
    		<?php cw_magazine_slider(); ?>
 	</div>
-    
+	<?php } ?>
 	<div id="content" class="content-area" role="main">
-		<?php 
-		if ( have_posts() ) : 
-			while ( have_posts() ) : the_post();
-				echo '<div class="front-page-boxes">';
-					echo '<ul>';	
-						echo '<li class="title-categ"><span><a href="'.get_permalink().'">'.get_the_title().'</a></span></li>';
-						echo '<li>';
-							echo '<a href="'.get_permalink().'" title="'.get_the_title().'">';
-								the_post_thumbnail(array(75,75), array('class' => 'alignleft'));
-							echo '</a>';
-							echo get_the_time('F j, Y');
-							echo '<a href="'.get_comments_link().'">';
-									comments_number( ' - No comments ', ' - One comment ', ' - % comments ' );
-							echo '</a>';
-							$cat = get_the_category();
-							if(!empty($cat)) :
-								_e(' - In: ','cw-magazine');
-								foreach($cat as $cat_item):
-									echo '<a class="sub-link" href="'.get_category_link($cat_item->cat_ID).'">'.$cat_item->cat_name.'</a> ';
-								endforeach;
-							endif;
-							
-							echo '<p>'.get_the_excerpt().'</p>';
-							echo '<p><a href="'.get_permalink().'" title="'.get_the_title().'" class="readmore">'.__('Read more','cw-magazine').'</a></p>';
-						echo '</li>';
-					echo '</ul>';
-				echo '</div>';	
+
+		<?php while ( have_posts() ) : the_post(); 
+		
+			/* Include the Post-Format-specific template for the content.
+			 * If you want to overload this in a child theme then include a file
+			 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+			 */
+			get_template_part( 'content', get_post_format() );
+			
 			endwhile; ?>
-				
+			
+
 			        <div class="navigation">
-						<?php if (function_exists("pagination")) {
-    						pagination();
-						}else{ 
-                        	cwp_content_nav( 'nav-below' ); 
-						} ?>
-					</div> <!-- end navigation --> 
-					
-		<?php else : ?>
-			<?php get_template_part( 'no-results', 'index' ); ?>
-		<?php endif; ?>
+
+						<?php
+							$big = 999999999; // need an unlikely integer
+							echo paginate_links( array(
+								'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+								'format' => '?paged=%#%',
+								'current' => max( 1, get_query_var('paged') ),
+								'total' => $wp_query->max_num_pages
+							) );
+
+						?>
+					</div> <!-- end navigation -->
+
 	</div><!-- .content -->
 
 <?php get_sidebar(); ?>
