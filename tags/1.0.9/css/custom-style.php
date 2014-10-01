@@ -92,7 +92,7 @@
         else
             $site_bg_1 = get_theme_mod('site_bg_1');
         
-	if( !get_theme_mod('color_scheme') || (get_theme_mod('color_scheme') == 'cw_magazine' ) || (get_theme_mod('color_scheme') == 'none' ) ){	
+	if( get_theme_mod('color_scheme') && (get_theme_mod('color_scheme') == 'cw_magazine' )){	
 		$header_color_1 = ' ';
         $header_color_2 = ' ';
         $header_color_3 = ' ';

@@ -2,23 +2,19 @@
 
 Theme Name: CW Magazine
 
-Theme URI: https://themeisle.com/themes/cw-magazine/
+Theme URI: http://themeisle.com/themes/cw-magazine/
 
-Author: ThemeIsle
+Author: themeisle.com
 
-Author URI: https://themeisle.com/
+Author URI: http://themeisle.com/
 
-Description: CW Magazine is a easily customizable Free Magazine WordPress Theme with numerous theme options and a beautiful design.
+Description: CW Magazine is a easily customizable WordPress Theme with numerous theme options and a beautiful design.  
 
-Version: 1.1
+Version: 1.0.9
 
 License: GNU General Public License version 2
 
 License URI: license.txt
-
-Text Domain: cw-magazine
-
-Domain Path: /languages
 
 Tags: black, blue, gray, green, purple, red, white, light, one-column, two-columns, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, post-formats
 
@@ -26,7 +22,6 @@ This theme, like WordPress, is licensed under the GPL.
 
 Use it to make something cool, have fun, and share what you've learned with others.
 
-CW Magazine is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
 
 */
@@ -55,9 +50,9 @@ CW Magazine is based on Underscores http://underscores.me/, (C) 2012-2013 Automa
 
 	2.2 =Text elements
 
-	2.3 =Links
+	2.3 =Links 
 
- 	2.4 =Clearing
+ 	2.4 =Clearing 
 
  3.0 =Main Menu
 
@@ -121,7 +116,7 @@ html, body, div, span, applet, object, iframe,
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 
-a, abbr, acronym, address, big, cite, code,
+abbr, acronym, address, big, cite, code,
 
 del, dfn, em, font, ins, kbd, q, s, samp,
 
@@ -402,7 +397,7 @@ hr {
 
 
 
-/* 2.2 =Text elements
+/* 2.2 =Text elements 
 
 -------------------------------------------------------------- */
 
@@ -778,7 +773,7 @@ input[type="search"] {
 
 
 
-/* 2.3 =Links
+/* 2.3 =Links 
 
 -------------------------------------------------------------- */
 
@@ -895,7 +890,7 @@ a:active {
 
 
 
-/* 2.4 =Clearing
+/* 2.4 =Clearing 
 
 -------------------------------------------------------------- */
 
@@ -962,11 +957,11 @@ a:active {
 	position: relative;
 
 	display: inline-block;
-
+	
 	border-left: 1px solid rgba(255,255,255, 0.1);
 
 	border-right: 1px solid rgba(0,0,0,0.2);
-
+	
 	margin-right: -3px;
 
 }
@@ -992,13 +987,13 @@ a:active {
 	padding: 10px 20px;
 
 	color: #cddfe4;
-
+	
 	font-family: 'Droid Sans', sans-serif;
-
+	
 	font-weight: 700;
-
+	
 	text-transform: uppercase;
-
+	
 	font-size: 11px;
 
 }
@@ -1076,7 +1071,7 @@ a:active {
 
 /* 4.0 =Header
 
------------------------------------------------ */
+----------------------------------------------- */	
 
 .site-header{}
 
@@ -1086,22 +1081,22 @@ a:active {
 
 	clear: both;
 
-	}
+	}	
 
 .header-middle-wrap{
 
 	width: 100%;
-
+	
 	float: left;
-
+	
 	border-top: 1px solid rgba(255,255,255, 0.5);
 
     background-image: url(images/shadow-header.png);
-
+    
     background-color: #008fb8;
-
+    
     background-position: bottom;
-
+    
     background-repeat: repeat-x;
 }
 
@@ -1112,25 +1107,6 @@ a:active {
 	text-align: left;
 
 	}
-
-.logo a.site-description-a {
-	padding-top: 0px;
-	padding-left: 0px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-}
-	
-
-.logo a.site-title-a {
-	padding-left: 0px;
-	padding-bottom: 5px;
-	padding-top: 20px;
-	padding-right: 20px;
-}
-
-.logo a.site-logo-a {
-	padding:20px 20px 20px 0px;
-}
 
 .logo a{
 
@@ -1164,7 +1140,7 @@ a:active {
 
 	line-height: 16px;
 
-	}
+	}	
 
 .ad-header{
 
@@ -1184,11 +1160,11 @@ a:active {
 
 	}
 
-
+	
 
 /* 4.1 =Main Menu
 
------------------------------------------------ */
+----------------------------------------------- */	
 
 .main-menu{
 
@@ -1199,7 +1175,7 @@ a:active {
 	clear: both;
 
 	background-color: #075e77;
-
+	
 	}
 
 
@@ -1209,8 +1185,10 @@ a:active {
 .main-menu .search-form{
 
 	float: right;
-	position: relative;
+
 	margin: 7px 5px 7px 0;
+	
+	position: relative;
 
 	}
 
@@ -1229,7 +1207,7 @@ a:active {
 	border-radius: 0;
 
 	width: 150px;
-
+	
 	background: transparent;
 
 	background: rgba(255,255,255,.1);
@@ -1249,13 +1227,13 @@ a:active {
 	height: 23px;
 
 	margin-left: -27px;
-
+	
 	position: absolute;
 	
 	right: 0;
 	
 	top: 0;
-
+		
 }
 
 .main-menu .search-form .bg-input-search{
@@ -1342,9 +1320,9 @@ a:active {
 	font-size: 12px;
 
 	color: #939598;
-
+	
 	font-family: 'Droid Sans', sans-serif;
-
+	
 	font-weight: 400;
 
 	}
@@ -1352,7 +1330,7 @@ a:active {
 .header-top .main-navigation .current_page_item a {
 
 	font-weight: 700;
-
+	
 	color: #FFFFFF;
 
 }
@@ -1579,7 +1557,7 @@ a:active {
 .callbacks .caption {
 
 	display: block;
-
+	
 	position: absolute;
 
 	z-index: 2;
@@ -1597,7 +1575,7 @@ a:active {
 	margin: 0;
 
 	border-style: solid;
-
+	
 	border-top: none;
 
 	border-right: none;
@@ -1613,7 +1591,7 @@ a:active {
 	padding: 0 20px;
 
 	font-family: 'Droid Sans', sans-serif;
-
+	
   }
 
 .callbacks .caption span.title-c{
@@ -1625,7 +1603,7 @@ a:active {
 	display: block;
 
 	color: #FFF;
-
+	
 	font-family: 'Droid Sans', sans-serif;
 
 	font-weight: 700;
@@ -1663,13 +1641,13 @@ a:active {
 	clear: both !important;
 
 	display: block !important;
-
+	
 }
 
 .btn-slider:hover{
-
+	
 	color: #000000 !important;
-
+	
 	background: #FFF;
 
 }
@@ -1775,7 +1753,6 @@ a:active {
 	width: 100%;
 
 	border: 0;
-	height:350px!important;
 
 	}
 
@@ -1788,7 +1765,7 @@ a:active {
 	position: absolute;
 
 	z-index: 99;
-
+	
 	overflow: hidden;
 
 	}
@@ -1861,10 +1838,10 @@ a:active {
 	border-top-width: 3px;
 
 	float: left;
-
+	
 	width: 100%;
 
-	height:350px;
+	margin-bottom: 50px;
 
 }
 
@@ -1967,7 +1944,6 @@ a:active {
 	float: left;
 
 	width: 63%;
-	margin-top:20px;
 
 	}
 
@@ -2001,10 +1977,10 @@ widget_tag_cloud a{
 	min-height: 520px;
 
 }
-
+	
 .front-page-boxes ul	{
 	margin: 0;
-}
+}	
 
 .front-page-boxes ul li{
 
@@ -2040,13 +2016,13 @@ widget_tag_cloud a{
 
 	font-family: 'Open Sans', sans-serif;
 
-	font-size: 13px;
+	font-size: 13px;	
 
 	}
 
 .front-page-boxes ul li a:hover{
 
-	color: #000;
+	color: #eab040
 
 	}
 
@@ -2071,7 +2047,7 @@ widget_tag_cloud a{
 	padding: 2px 0 2px 0 !important;]
 
 	}
-
+	
 .title-categ span{
 
 	font-size: 12px;
@@ -2079,7 +2055,7 @@ widget_tag_cloud a{
 	color: #FFF;
 
 	background-color: #eab040;
-
+	
 	padding: 0 10px 0 10px;
 
 	font-family: 'Droid Sans', sans-serif;
@@ -2106,19 +2082,19 @@ widget_tag_cloud a{
 
 	}
 .box-hp-big .front-page-boxes:nth-child(odd){
-
+	
 	clear: left;
-
+	
 }
 .box-hp-big .front-page-boxes:nth-child(even){
-
+	
 	clear: right;
-
+	
 }
 
 /* 6.2 =Contact page
 
------------------------------------------------ */
+----------------------------------------------- */	
 
 .cotnact-form-wrap{
 
@@ -2197,6 +2173,8 @@ h1.entry-title{
 	word-wrap: break-word;
 
 	line-height: 34px;
+	margin-top:20px;
+	margin-bottom:-15px;
 
     color: #eab040;
 
@@ -2241,11 +2219,11 @@ article{
 article .entry-content{
 
     margin: 10px 0 0 0;
-
+    
     background: #FFF;
-
+    
     padding: 20px 10px 0 10px;
-
+	
 	border-top-color: #eab040;
 
 	border-top-style: solid;
@@ -2255,7 +2233,7 @@ article .entry-content{
 	}
 
 article .entry-content p{
-
+    
     color: #363636;
 
     text-decoration: none;
@@ -2279,7 +2257,7 @@ article .entry-content p{
     margin-left: -10px;
 
     margin-right: -10px;
-
+    
     clear: both;
 
     }
@@ -2303,7 +2281,7 @@ article .entry-content p{
 .entry-meta a:hover{
 
     color: #eab040;
-
+    
 }
 
 .author-link a{
@@ -2323,20 +2301,20 @@ article .entry-content p{
     color: #a0a3a5;
 
     text-decoration: none;
-
+    
     margin-left: 10px;
 
 }
 
 .author-link a:hover,
 .comments-number:hover{
-
+    
     color: #eab040;
-
+    
 }
 
 .comments-number{
-
+    
     padding-left: 18px;
 
     background: url(images/icon-meta.png) 0px -41px no-repeat;
@@ -2354,7 +2332,7 @@ article .entry-content p{
     text-decoration: none;
 
     margin-left: 20px;
-
+    
 }
 .post-time{
 
@@ -2379,14 +2357,12 @@ article .entry-content p{
     float: right;
 
     margin-right: 20px;
-
+    
 }
 
 h1.page-title{
 
 	border-width: 1px;
-
-	margin-top:5px;
 
 	padding: 15px 15px 0 0;
 
@@ -2395,9 +2371,9 @@ h1.page-title{
     color: #eab040;
 
     font-size: 24px;
-
+    
     text-transform: uppercase;
-
+    
     font-family: 'Droid Sans', sans-serif;
 
     font-weight: 700;
@@ -2405,11 +2381,11 @@ h1.page-title{
 	}
 
 h1.page-title span{
-
+	
 	font-size: 24px;
-
+	
 	color: #000000;
-
+	
 }
 
 .page-header{
@@ -2440,24 +2416,24 @@ h1.page-title span{
     padding: 6px 0;
 
     margin-top: 20px;
-
+    
     margin-bottom: 20px;
 
 }
 .read-more-btn:hover{
-
+    
     color: #363636;
-
+    
 }
 
 .entry-content-right{
-
+    
     width: 140px;
 
     float: right;
-
+    
     margin-left: 20px;
-
+        
 }
 
 .entry-content-right a{
@@ -2468,11 +2444,11 @@ h1.page-title span{
 
 /* 8.0 =Post
 
------------------------------------------------ */
+----------------------------------------------- */	
 
 .post .entry-header, .page .entry-header{
 
-	margin-bottom: 20px;
+	margin-bottom: 20px;	
 
 	}
 
@@ -2491,7 +2467,7 @@ h1.page-title span{
 /*	padding-left: 5px; */
 
 	margin-top: 5px;
-
+    
     background: none;
 
 }
@@ -2669,12 +2645,9 @@ object {
 .navigation{
 
 	margin-top: -20px;
-
-	float: left;
-	font-size: 25px;
-	font-weight: bold;
-	margin-bottom: 20px;
-
+	
+	background: rgba(255,255,255, .5);
+	
 }
 
 .pagination {
@@ -2706,7 +2679,7 @@ object {
 	color: #2e3f42;
 
 
-	}
+	} 
 
 .pagination a:hover{
 
@@ -2714,7 +2687,7 @@ object {
 
 	color: #FAFAFA;
 
-	}
+	} 
 
 .pagination .current{
 
@@ -2733,7 +2706,7 @@ object {
 ----------------------------------------------- */
 
 .comment-list{
-
+    
     margin-left: 0;
 }
 
@@ -2881,7 +2854,7 @@ p.fn, .commentmetadata{
     font-family: 'Open Sans', sans-serif;
 
     font-size: 13px;
-
+    
     }
 
 /* 14.0 =Widgets
@@ -2929,21 +2902,21 @@ header .widget {
 .widget-title span{
 
     font-size: 12px;
-
+    
     color: #FFF;
-
+    
     background-color: #eab040;
-
+    
     padding: 0 10px 0 10px;
-
+    
     font-family: 'Droid Sans', sans-serif;
-
+    
     font-weight: 700;
-
+    
     text-transform: uppercase;
-
+    
     min-width: 150px;
-
+    
     display: inline-block;
 
 }
@@ -2951,13 +2924,13 @@ header .widget {
 .widget-title a{
 
 	font-size: 12px;
-
+    
     color: #FFF;
-
+    
     font-family: 'Droid Sans', sans-serif;
-
+    
     font-weight: 700;
-
+    
     text-transform: uppercase;
 
 }
@@ -2977,7 +2950,7 @@ header .widget {
 	color: #eab040;
 
     list-style-type: square;
-
+    
     font-family: 'Open Sans', sans-serif;
 
     }
@@ -3005,9 +2978,9 @@ header .widget {
 .widget select {
 
     max-width: 100%;
-
+    
     padding: 5px;
-
+    
     border: 1px solid #ccc;
 
     width: 100%;
@@ -3174,6 +3147,7 @@ header .widget {
 
 	color: #f3f3f3;
 
+	margin-top: 40px;
 
 	padding: 6px 1%;
 
@@ -3278,7 +3252,7 @@ a.symbol{
 	font-size: 29px;
 
 	margin-top: 4px;
-
+	
 	color: #FFF;
 
 	}
@@ -3363,9 +3337,9 @@ a.symbol{
 
 	}
 
-#nav .selected a,
+#nav .selected a, 
 
-#nav2 .selected a {
+#nav2 .selected a { 
 
 	color: red;
 
@@ -3381,7 +3355,7 @@ a.symbol{
 
 		width: 98%;
 
-		padding: inherit 1%;
+		padding: inherit 1%; 
 
 		}
 
@@ -3489,7 +3463,7 @@ a.symbol{
 
 		float: none;
 
-		}
+		}	
 
 	.social-icons-header {
 
@@ -3521,7 +3495,7 @@ a.symbol{
 
 		}
 
-	.tinynav {
+	.tinynav { 
 
 		display: block;
 
@@ -3531,9 +3505,9 @@ a.symbol{
 
 		}
 
-	#nav, #nav2 {
+	#nav, #nav2 { 
 
-		display: none;
+		display: none; 
 
 		}
 
@@ -3549,15 +3523,15 @@ a.symbol{
 
 	}
 	.callbacks .caption{
-
+	
 		position: relative;
-
+		
 		right: 0;
-
+		
 		float: left;
-
+		
 		width: 90%;
-
+		
 		padding: 20px 5%;
 
 	}
@@ -3596,7 +3570,7 @@ a.symbol{
 
 		margin: 0 auto;
 
-	}
+	}		
 
 }
 
