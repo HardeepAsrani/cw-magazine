@@ -1,5 +1,15 @@
 
 
+### 1.1.2 - 03/12/2014
+
+ Changes: 
+
+
+ * Update footer.php
+ * Update style.css
+ * Update style.css
+
+
 ### 1.1 - 17/10/2014
 
  Changes: 
