@@ -23,7 +23,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 	));
 	$wp_customize->add_setting(
         'cwp_theme_notice' 
-	 ,array( 'sanitize_callback' => 'esc_url_raw' );
+	 ,array( 'sanitize_callback' => 'esc_url_raw' ));
 	
 	$wp_customize->add_control(
     'cwp_theme_notice',
