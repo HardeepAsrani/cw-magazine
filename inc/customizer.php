@@ -342,7 +342,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 	
 	/* Logo */
 	
-	$wp_customize->add_setting( 'logo_header',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'logo_header',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_logo', array(
 	    'label'    => __( 'Logo', 'cw-magazine' ),
 	    'section'  => 'cw_logo_section',
