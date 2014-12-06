@@ -342,7 +342,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 	
 	/* Logo */
 	
-	$wp_customize->add_setting( 'logo_header',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'logo_header',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_logo', array(
 	    'label'    => __( 'Logo', 'cw-magazine' ),
 	    'section'  => 'cw_logo_section',
@@ -356,7 +356,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 37
 	) );
 	
-	$wp_customize->add_setting( 'cw_copyright',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'cw_copyright',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 'cw_copyright', array(
 	    'label'    => __( 'Copyright', 'cw-magazine' ),
 	    'section'  => 'cw_copyright_section',
@@ -370,7 +370,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 38
 	) );
 	
-	$wp_customize->add_setting( 'select_template',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'select_template',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control(
 		'select_template',
 		array(
@@ -391,7 +391,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 39
 	) );
 	
-	$wp_customize->add_setting( 'color_scheme',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'color_scheme',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control(
 		'color_scheme',
 		array(
@@ -414,7 +414,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'priority'    => 40
 	) );
 	
-	$wp_customize->add_setting( 'margin_h',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'margin_h',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 'margin_h', array(
 	    'label'    => __( 'Header horizontal margin', 'cw-magazine' ),
 	    'section'  => 'cw_margins_section',
@@ -422,7 +422,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		'priority'    => 1,
 	) );
 	
-	$wp_customize->add_setting( 'margin_v',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'margin_v',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 'margin_v', array(
 	    'label'    => __( 'Header vertical margin', 'cw-magazine' ),
 	    'section'  => 'cw_margins_section',
@@ -435,7 +435,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'title'       => __( 'Site colors', 'cw-magazine' ),
     	'priority'    => 41
 	) );
-	$wp_customize->add_setting( 'site_color_3',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'site_color_3',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -447,7 +447,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		) )
 	);
 	
-	$wp_customize->add_setting( 'site_color_2',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'site_color_2',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -460,7 +460,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'site_color_1',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'site_color_1',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -473,7 +473,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'site_color_4',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'site_color_4',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -486,7 +486,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'site_color_5',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'site_color_5',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -499,7 +499,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'site_color_6',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'site_color_6',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -512,7 +512,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 
-	$wp_customize->add_setting( 'site_bg_1' ,array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'site_bg_1' ,array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_site_bg_1', array(
 	    'label'    => __( 'Image background page', 'cw-magazine' ),
 	    'section'  => 'cw_sitecolors_section',
@@ -524,7 +524,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'title'       => __( 'Header colors', 'cw-magazine' ),
     	'priority'    => 42
 	) );
-	$wp_customize->add_setting( 'header_color_1' ,array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_1' ,array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -536,7 +536,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		) )
 	);
 	
-	$wp_customize->add_setting( 'header_color_11',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_11',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -549,7 +549,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_12',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_12',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -562,7 +562,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_2',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_2',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -575,7 +575,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_3',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_3',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -588,7 +588,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_4',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_4',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -601,7 +601,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_5',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_5',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -614,7 +614,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_6',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_6',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -627,7 +627,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_7',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_7',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -640,7 +640,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_8',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_8',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -653,7 +653,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'header_color_9',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'header_color_9',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -671,7 +671,7 @@ function cw_magazine_customize_register( $wp_customize ) {
     	'title'       => __( 'Footer colors', 'cw-magazine' ),
     	'priority'    => 43
 	) );
-	$wp_customize->add_setting( 'footer_color_1',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'footer_color_1',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -683,7 +683,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		) )
 	);
 	
-	$wp_customize->add_setting( 'footer_color_2',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'footer_color_2',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -696,7 +696,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'footer_color_3',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'footer_color_3',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -709,7 +709,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'footer_color_4',array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'footer_color_4',array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
@@ -722,7 +722,7 @@ function cw_magazine_customize_register( $wp_customize ) {
 		
 	);
 	
-	$wp_customize->add_setting( 'footer_color_5' ,array( 'sanitize_callback' => 'esc_url_raw' );
+	$wp_customize->add_setting( 'footer_color_5' ,array( 'sanitize_callback' => 'esc_url_raw' ));
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control( 
 		$wp_customize, 
