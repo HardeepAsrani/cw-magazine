@@ -1,5 +1,13 @@
 
 
+### 1.1.5 - 11/12/2014
+
+ Changes: 
+
+
+ * This fixes #3, #4, #5. Fixed colors change, added date, remove unused featured from customizer + small fixes
+
+
 ### 1.1.2 - 03/12/2014
 
  Changes: 
