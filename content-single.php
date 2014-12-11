@@ -12,7 +12,7 @@
 			<?php
 				echo '<span class="posted-on">'.__('Posted on','cw-magazine');
 				?>
-					<a href="<?php echo get_month_link( get_the_time('Y'), get_the_time('m') ); ?>" title="<?php the_time( get_option( 'time_format' ) ); ?>" class="blog-box-date"><?php the_time( get_option( 'time_format' ) ); ?></a>
+					<a href="<?php echo get_month_link( get_the_time('Y'), get_the_time('m') ); ?>" title="<?php the_time( get_option( 'time_format' ) ); ?>" class="blog-box-date"><?php echo get_the_date().' '; the_time( get_option( 'time_format' ) ); ?></a>
 				<?php
 				echo '</span>';
 				echo '<span class="byline"> '.__('by','cw-magazine'). ' </span><span class="author vcard"><a href="'.get_author_posts_url( get_the_author_meta( 'ID' )).'" >'.get_the_author().'</a></span>';
