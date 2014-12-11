@@ -141,9 +141,8 @@ add_action( 'widgets_init', 'cw_magazine_widgets_init' );
  * Enqueue scripts and styles
  */
 function cw_magazine_scripts() {
-	wp_enqueue_style( 'cw-magazine-style', get_stylesheet_uri() );
 
-    wp_enqueue_style( 'cw-magazine-style-custom', get_template_directory_uri() . '/css/custom-style.php');
+	wp_enqueue_style( 'cw-magazine-style', get_stylesheet_uri() );
 
     wp_enqueue_style( 'cw-magazine-style-responsiveslides', get_template_directory_uri() . '/css/responsiveslides.css');
 
@@ -415,51 +414,6 @@ function cw_magazine_slider(){
 
 }
 
-/* show category frontpage */
-function cw_magazine_show_category_frontpage(){
-
-	if(get_theme_mod('cat1_slug')):
-		$cat1 = get_category(get_theme_mod('cat1_slug'));
-		$cat1_id = $cat1->cat_ID;
-		$cat1_name = $cat1->cat_name;
-
-		cw_magazine_show_posts($cat1_name, $cat1_id );
-	else:
-		cw_magazine_show_posts('','');
-	endif;
-
-	if(get_theme_mod('cat2_slug')):
-		$cat2 = get_category(get_theme_mod('cat2_slug'));
-		$cat2_id = $cat2->cat_ID;
-		$cat2_name = $cat2->cat_name;
-
-		cw_magazine_show_posts($cat2_name, $cat2_id );
-	else:
-		cw_magazine_show_posts('','');
-	endif;
-
-	if(get_theme_mod('cat3_slug')):
-		$cat3 = get_category(get_theme_mod('cat3_slug'));
-		$cat3_id = $cat3->cat_ID;
-		$cat3_name = $cat3->cat_name;
-
-		cw_magazine_show_posts($cat3_name, $cat3_id );
-	else:
-		cw_magazine_show_posts('','');
-	endif;
-
-	if(get_theme_mod('cat4_slug')):
-		$cat4 = get_category(get_theme_mod('cat4_slug'));
-		$cat4_id = $cat4->cat_ID;
-		$cat4_name = $cat4->cat_name;
-
-		cw_magazine_show_posts($cat4_name, $cat4_id );
-	else:
-		cw_magazine_show_posts('','');
-	endif;
-
-}
-
 function cw_magazine_show_posts($name_categ, $id_cat){
 
 	if($name_categ):
@@ -532,4 +486,363 @@ function cwp_no_title ($title) {
         $title = "(No title)";
     }
     return $title;
+}
+
+/**************************/
+/** custom color **********/
+/**************************/
+
+add_action('wp_print_scripts','cw_magazine_php_style');
+
+function cw_magazine_php_style() {
+
+	echo ' <style type="text/css">';
+	
+	$color_scheme = get_theme_mod('color_scheme','cw_magazine');
+	
+	if( !empty($color_scheme) ):
+		
+		if( $color_scheme == 'red_style' ):
+			
+			$header_color_1 = '#dd3333';
+			$header_color_2 = '#6c1a1a';
+			$header_color_3 = '#ddc3c3';
+			$header_color_4 = '#ffffff';
+			$header_color_5 = '#282828';
+			$header_color_6 = '#ddcccc';
+			$header_color_7 = '#ffffff';
+			$header_color_8 = '#ddcccc';
+			$header_color_9 = '#dd3333';
+			$header_color_11 = '#ffffff';
+			$header_color_12 = '#ddafaf';
+			$footer_color_1 = '#6c1a1a';
+			$footer_color_2 = '#ffffff';
+			$footer_color_3 = '#dda1a1';
+			$footer_color_4 = '#ffdddd';
+			$footer_color_5 = '#ffffff';
+			$site_color_1 = '#6c1a1a';
+			$site_color_2 = '#ffffff';
+			$site_color_3 = '#dd3333';
+			$site_color_4 = '#6c1a1a';
+			$site_color_5 = '#dd3333';	
+			$site_color_6 = '#f2eee7';
+			$site_bg_1 = '../images/bg-site_red.jpg';
+		
+		elseif( $color_scheme == 'fashion_style' ):
+		
+			$header_color_1 = '#e62750';
+			$header_color_2 = '#ffbdcb';
+			$header_color_3 = '#961934';
+			$header_color_4 = '#e62750';
+			$header_color_5 = '#ffbdcb';
+			$header_color_6 = '#961934';
+			$header_color_7 = '#e62750';
+			$header_color_8 = '#961934';
+			$header_color_9 = '#e62750';
+			$header_color_11 = '#ffffff';
+			$header_color_12 = '#e5a0ae';
+			$footer_color_1 = '#e62750';
+			$footer_color_2 = '#ffffff';
+			$footer_color_3 = '#e5c7cd';
+			$footer_color_4 = '#fff2f2';
+			$footer_color_5 = '#ffffff';
+			$site_color_1 = '#e62750';
+			$site_color_2 = '#ffffff';
+			$site_color_3 = '#e62750';
+			$site_color_4 = '#f2dfe5';
+			$site_color_5 = '#dd3333';
+			$site_color_6 = '#e5d3d7';
+			$site_bg_1 = '../images/bg-site_pink.jpg';
+
+		elseif( $color_scheme == 'sports_blog' ):	
+
+			$header_color_1 = '#32a546';
+			$header_color_2 = '#282828';
+			$header_color_3 = '#ceeacf';
+			$header_color_4 = '#ffffff';
+			$header_color_5 = '#282828';
+			$header_color_6 = '#32a546';
+			$header_color_7 = '#ffffff';
+			$header_color_8 = '#32a546';
+			$header_color_9 = '#ffffff';
+			$header_color_11 = '#ffffff';
+			$header_color_12 = '#ceeacf';
+			$footer_color_1 = '#282828';
+			$footer_color_2 = '#32a546';
+			$footer_color_3 = '#ceeacf';
+			$footer_color_4 = '#32a546';
+			$footer_color_5 = '#ffffff';
+			$site_color_1 = '#32a546';
+			$site_color_2 = '#ffffff';
+			$site_color_3 = '#32a546';
+			$site_color_4 = '#32a546';
+			$site_color_5 = '#dd3333';
+			$site_color_6 = '#F9F9F9';
+			$site_bg_1 = '../images/bg-site_green.jpg';		
+		
+		endif;
+			
+	endif;
+	
+	if( !isset($color_scheme) || (isset($color_scheme) && ($color_scheme == 'none')) ):
+	
+		if( get_theme_mod('footer_color_1') ):
+			$footer_color_1 = get_theme_mod('footer_color_1');
+		endif;
+
+		if( get_theme_mod('site_color_3') ):
+			$site_color_3 = get_theme_mod('site_color_3');
+		endif;
+		
+		if(get_theme_mod('site_color_2')):
+			$site_color_2 = get_theme_mod('site_color_2');
+		endif;
+		
+		if(get_theme_mod('site_color_1')):
+			$site_color_1 = get_theme_mod('site_color_1');
+		endif;
+		
+		if(get_theme_mod('site_color_4')):
+			$site_color_4 = get_theme_mod('site_color_4');
+		endif;
+		
+		if(get_theme_mod('site_color_5')):
+			$site_color_5 = get_theme_mod('site_color_5');
+		endif;
+		
+		if(get_theme_mod('site_color_6')):
+			$site_color_6 = get_theme_mod('site_color_6');
+		endif;
+		
+		if(get_theme_mod('site_bg_1')):
+			$site_bg_1 = get_theme_mod('site_bg_1');
+		endif;
+		
+		if(get_theme_mod('header_color_1')):
+			$header_color_1 = get_theme_mod('header_color_1');
+		endif;
+		
+		if(get_theme_mod('header_color_11')):
+			$header_color_11 = get_theme_mod('header_color_11');
+		endif;
+		
+		if(get_theme_mod('header_color_12')):
+			$header_color_12 = get_theme_mod('header_color_12');
+		endif;
+		
+		if(get_theme_mod('header_color_2')):
+			$header_color_2 = get_theme_mod('header_color_2');
+		endif;
+		
+		if(get_theme_mod('header_color_3')):
+			$header_color_3 = get_theme_mod('header_color_3');
+		endif;
+		
+		if(get_theme_mod('header_color_4')):
+			$header_color_4 = get_theme_mod('header_color_4');
+		endif;
+		
+		if(get_theme_mod('header_color_5')):
+			$header_color_5 = get_theme_mod('header_color_5');
+		endif;
+		
+		if(get_theme_mod('header_color_6')):
+			$header_color_6 = get_theme_mod('header_color_6');
+		endif;
+		
+		if(get_theme_mod('header_color_7')):
+			$header_color_7 = get_theme_mod('header_color_7');
+		endif;
+		
+		if(get_theme_mod('header_color_8')):
+			$header_color_8 = get_theme_mod('header_color_8');
+		endif;
+		
+		if(get_theme_mod('header_color_9')):
+			$header_color_9 = get_theme_mod('header_color_9');
+		endif;
+		
+		if(get_theme_mod('footer_color_1')):
+			$footer_color_1 = get_theme_mod('footer_color_1');
+		endif;
+		
+		if(get_theme_mod('footer_color_2')):
+			$footer_color_2 = get_theme_mod('footer_color_2');
+		endif;
+		
+		if(get_theme_mod('footer_color_3')):
+			$footer_color_3 = get_theme_mod('footer_color_3');
+		endif;
+		
+		if(get_theme_mod('footer_color_4')):
+			$footer_color_4 = get_theme_mod('footer_color_4');
+		endif;
+		
+		if(get_theme_mod('footer_color_5')):
+			$footer_color_5 = get_theme_mod('footer_color_5');
+		endif;
+		
+	endif;
+	
+	/* header_color_1 */
+	if( !empty($header_color_1) ):
+		echo '.header-middle-wrap{ background-color: '.$header_color_1.'; }';
+		echo '.callbacks_here a { background-color: '.$header_color_1.'; border: 3px solid '.$header_color_1.'; }';
+		echo '.btn-slider { background: '.$header_color_1.'; }';
+		echo '.callbacks_tabs li a:hover{ background-color: '.$header_color_1.'; }';
+		echo 'input[type="submit"] { background-color: '.$header_color_1.'; }';
+		echo '.read-more-btn{ background: '.$header_color_1.'; }';
+	endif;	
+	
+	/* header_color_2 */
+	if( !empty($header_color_2) ):
+		echo '.main-menu, .main-menu .main-navigation ul ul{ background-color: '.$header_color_2.'; }';
+		echo 'article .entry-content{ border-top-color: '.$header_color_2.'; }';
+		echo '.pagination .current, .pagination a:hover{ background-color: '.$header_color_2.'; }';
+		echo 'input[type="submit"]:hover { background-color: '.$header_color_2.'; }';
+		echo '.widget ul li { color: #6c1a1a; } h1.entry-title a{ color: '.$header_color_2.'; }';
+	endif;	
+			
+	/* header_color_3 */
+	if( !empty($header_color_3) ):
+		echo '.main-menu .main-navigation a{ color: '.$header_color_3.'; }';
+	endif;		
+			
+	/* header_color_4 */
+	if( !empty($header_color_4) ):
+		echo '.main-menu .main-navigation li:hover > a, .main-menu .main-navigation ul ul a:hover{ color: '.$header_color_4.'; }';
+	endif;	
+			
+	/* header_color_5 */
+	if( !empty($header_color_5) ):
+		echo '.header-top{ background: '.$header_color_5.'; }';
+		echo '.header-top .main-navigation ul ul{ background-color: '.$header_color_5.'; }';
+	endif;	
+			
+	/* header_color_6 */
+	if( !empty($header_color_6) ):
+		echo '.header-top .main-navigation a, .header-top .main-navigation .current_page_item a{ color: '.$header_color_6.'; }';
+	endif;	
+			
+	/* header_color_7 */
+	if( !empty($header_color_7) ):
+		echo '.header-top .main-navigation ul ul a:hover, .header-top .main-navigation li:hover > a{ color: '.$header_color_7.'; }';
+	endif;	
+			
+	/* header_color_8 */
+	if( !empty($header_color_8) ):
+		echo '.social-icons-header a span{ color: '.$header_color_8.'; }';
+	endif;	
+			
+	/* header_color_9 */
+	if( !empty($header_color_9) ):
+		echo '.social-icons-header a span:hover{ color:'.$header_color_9.'; }';
+	endif;	
+			
+	/* header_color_11 */
+	if( !empty($header_color_11) ):
+		echo '.logo a, .logo a:hover{ color: '.$header_color_11.'; }';
+	endif;	
+			
+	/* header_color_12 */
+	if( !empty($header_color_12) ):
+		echo '.logo a span{ color: '.$header_color_12.'; }';
+	endif;	
+			
+	/* footer_color_1 */
+	if( !empty($footer_color_1) ):
+		echo '.site-footer { background-color: '.$footer_color_1.'; }';
+	endif;	
+			
+	/* footer_color_2 */
+	if( !empty($footer_color_2) ):
+		echo '.footer-title{ color: '.$footer_color_2.'; }';
+		echo '.widget-footer ul li:before{ color: '.$footer_color_2.'; }';
+	endif;	
+			
+	/* footer_color_3 */
+	if( !empty($footer_color_3) ):
+		echo '.widget-footer, .widget-footer li, .widget-footer ul li a, .copyright{ color: '.$footer_color_3.'; }';
+	endif;	
+			
+	/* footer_color_4 */
+	if( !empty($footer_color_4) ):
+		echo '.site-footer .textwidget a, .copyright a, .copyright strong{ color: '.$footer_color_4.'; }';
+	endif;	
+			
+	/* footer_color_5 */
+	if( !empty($footer_color_5) ):
+		echo '.widget-footer ul li a:hover, .site-footer .textwidget a:hover, .copyright a:hover{ color: '.$footer_color_5.'; }';
+	endif;	
+			
+	/* site_color_1 */
+	if( !empty($site_color_1) ):
+		echo '.title-categ span, .widget-title span, .readmore{ background-color: '.$site_color_1.'; }';
+		echo '.front-page-boxes ul li.title-categ, .widget-title{ border-color: '.$site_color_1.'; }';
+		echo '.hp-slider-wrap { border-top-color: '.$site_color_1.'; }';
+	endif;	
+			
+	/* site_color_2 */
+	if( !empty($site_color_2) ):
+		echo '.title-categ span, .title-categ span a, .title-categ span, .widget-title span, .readmore{ color: '.$site_color_2.' !important; }';
+	endif;	
+			
+	/* site_color_3 */
+	if( !empty($site_color_3) ):
+		echo 'h1.entry-title, h1.page-title{ color: '.$site_color_3.'; }';
+	endif;	
+			
+	/* site_color_4 */
+	if( !empty($site_color_4) ):
+		echo 'a { color: '.$site_color_4.'; }';
+	endif;	
+			
+	/* site_color_5 */
+	if( !empty($site_color_5) ):
+		echo '.widget ul li a:hover, .entry-meta a:hover, .front-page-boxes ul li a:hover, a:hover { color: '.$site_color_5.'; }';
+	endif;	
+			
+	/* site_color_6 */
+	if( !empty($site_color_6) ):
+		echo '.wrapper{ background-color: '.$site_color_6.'; }';
+	endif;	
+			
+	/* site_bg_1 */
+	if( !empty($site_bg_1) ):
+		echo '.wrapper{ background-image: url('.$site_bg_1.'); }';
+	endif;
+	
+	$select_template = get_theme_mod('select_template','sidebar_right');
+	
+	if( !empty($select_template) ):
+		
+		if( ($select_template == 'sidebar_right') || ($select_template == 'sidebar_left') ):
+		
+			$sidebar_width =  '34%';
+			$content_width =  '63%'; 
+		
+			if( $select_template == 'sidebar_right' ):
+				$sidebar_align =  'right';
+				$content_align =  'left';
+			elseif( $select_template == 'sidebar_left' ):
+				$sidebar_align =  'left';
+				$content_align =  'right';
+			endif;
+			
+			echo '.template-page .content-area{ float: '.$content_align.'; width: '.$content_width.'; }';
+			echo '.template-page .sidebar{ float: '.$sidebar_align.'; width: '.$sidebar_width.'; }';
+			
+		else:
+			$content_align = 'left';
+			$content_width = '98%';
+			
+			echo '.template-page .content-area{ float: '.$content_align.'; width: '.$content_width.'; }';
+			echo '.template-page .sidebar{ display: none !important; }';
+			
+		endif;
+		
+	endif;
+	
+	
+	echo '</style>';
 }

@@ -37,28 +37,28 @@
             
             	<?php 
 				
-				if(  get_theme_mod('facebook_link') )
-					echo '<a href="'.get_theme_mod("facebook_link").'" title="facebook" target="_blank"><span class="symbol">facebook</span></a>';
-				if(  get_theme_mod('twitter_link') )
-					echo '<a href="'.get_theme_mod("twitter_link").'" title="Twitter" target="_blank"><span class="symbol">twitterbird</span></a>';
-				if(  get_theme_mod('gplus_link') )
-					echo '<a href="'.get_theme_mod("gplus_link").'" title="Google+" target="_blank"><span class="symbol">googleplus</span></a>';
-				if(  get_theme_mod('linkedin_link') )
-					echo '<a href="'.get_theme_mod("facebook_link").'" title="Linkedin" target="_blank"><span class="symbol">linkedin</span></a>';
-				if(  get_theme_mod('youtube_link') )
-					echo '<a href="'.get_theme_mod("youtube_link").'" title="Youtube" target="_blank"><span class="symbol">youtube</span></a>';
-				if(  get_theme_mod('rss_link') )
-					echo '<a href="'.get_theme_mod("rss_link").'" title="RSS" target="_blank"><span class="symbol">rss</span></a>';
-				if(  get_theme_mod('vimeo_link') )
-					echo '<a href="'.get_theme_mod("vimeo_link").'" title="Vimeo" target="_blank"><span class="symbol">vimeo</span></a>';
-				if(  get_theme_mod('yelp_link') )
-					echo '<a href="'.get_theme_mod("yelp_link").'" title="Yelp" target="_blank"><span class="symbol">yelp</span></a>';
-				if(  get_theme_mod('stumbleupon_link') )
-					echo '<a href="'.get_theme_mod("stumbleupon_link").'" title="Stumbleupon" target="_blank"><span class="symbol">stumbleupon</span></a>';
-				if(  get_theme_mod('pinterest_link') )
-					echo '<a href="'.get_theme_mod("pinterest_link").'" title="Pinterest" target="_blank"><span class="symbol">pinterest</span></a>';
-				if(  get_theme_mod('tumblr_link') )
-					echo '<a href="'.get_theme_mod("tumblr_link").'" title="Tumblr" target="_blank"><span class="symbol">tumblr</span></a>';
+				if(  get_theme_mod('facebook_link','#') )
+					echo '<a href="'.get_theme_mod("facebook_link",'#').'" title="facebook" target="_blank"><span class="symbol">facebook</span></a>';
+				if(  get_theme_mod('twitter_link','#') )
+					echo '<a href="'.get_theme_mod("twitter_link",'#').'" title="Twitter" target="_blank"><span class="symbol">twitterbird</span></a>';
+				if(  get_theme_mod('gplus_link','#') )
+					echo '<a href="'.get_theme_mod("gplus_link",'#').'" title="Google+" target="_blank"><span class="symbol">googleplus</span></a>';
+				if(  get_theme_mod('linkedin_link','#') )
+					echo '<a href="'.get_theme_mod("facebook_link",'#').'" title="Linkedin" target="_blank"><span class="symbol">linkedin</span></a>';
+				if(  get_theme_mod('youtube_link','#') )
+					echo '<a href="'.get_theme_mod("youtube_link",'#').'" title="Youtube" target="_blank"><span class="symbol">youtube</span></a>';
+				if(  get_theme_mod('rss_link','#') )
+					echo '<a href="'.get_theme_mod("rss_link",'#').'" title="RSS" target="_blank"><span class="symbol">rss</span></a>';
+				if(  get_theme_mod('vimeo_link','#') )
+					echo '<a href="'.get_theme_mod("vimeo_link",'#').'" title="Vimeo" target="_blank"><span class="symbol">vimeo</span></a>';
+				if(  get_theme_mod('yelp_link','#') )
+					echo '<a href="'.get_theme_mod("yelp_link",'#').'" title="Yelp" target="_blank"><span class="symbol">yelp</span></a>';
+				if(  get_theme_mod('stumbleupon_link','#') )
+					echo '<a href="'.get_theme_mod("stumbleupon_link",'#').'" title="Stumbleupon" target="_blank"><span class="symbol">stumbleupon</span></a>';
+				if(  get_theme_mod('pinterest_link','#') )
+					echo '<a href="'.get_theme_mod("pinterest_link",'#').'" title="Pinterest" target="_blank"><span class="symbol">pinterest</span></a>';
+				if(  get_theme_mod('tumblr_link','#') )
+					echo '<a href="'.get_theme_mod("tumblr_link",'#').'" title="Tumblr" target="_blank"><span class="symbol">tumblr</span></a>';
 				?>
 			</div><!-- .social-icons-header -->
 		

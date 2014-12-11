@@ -44,7 +44,7 @@
 				<div class="entry-meta">
                     <span class="author-link"><?php the_author_posts_link() ?></span>
                     <a href="<?php echo get_permalink(get_the_ID()); ?> " class="comments-number"><?php comments_number() ?></a>
-                    <span class="post-time"><?php the_time( get_option( 'time_format' ) ); ?></span>
+                    <span class="post-time"><?php echo get_the_date().' '; the_time( get_option( 'time_format' ) ); ?></span>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 
