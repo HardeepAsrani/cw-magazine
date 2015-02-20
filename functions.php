@@ -526,7 +526,7 @@ function cw_magazine_php_style() {
 			$site_color_4 = '#6c1a1a';
 			$site_color_5 = '#dd3333';	
 			$site_color_6 = '#f2eee7';
-			$site_bg_1 = '../images/bg-site_red.jpg';
+			$site_bg_1 = get_template_directory_uri().'/images/bg-site_red.jpg';
 		
 		elseif( $color_scheme == 'fashion_style' ):
 		
@@ -552,7 +552,7 @@ function cw_magazine_php_style() {
 			$site_color_4 = '#f2dfe5';
 			$site_color_5 = '#dd3333';
 			$site_color_6 = '#e5d3d7';
-			$site_bg_1 = '../images/bg-site_pink.jpg';
+			$site_bg_1 = get_template_directory_uri().'/images/bg-site_pink.jpg';
 
 		elseif( $color_scheme == 'sports_blog' ):	
 
@@ -578,7 +578,7 @@ function cw_magazine_php_style() {
 			$site_color_4 = '#32a546';
 			$site_color_5 = '#dd3333';
 			$site_color_6 = '#F9F9F9';
-			$site_bg_1 = '../images/bg-site_green.jpg';		
+			$site_bg_1 = get_template_directory_uri().'/images/bg-site_green.jpg';		
 		
 		endif;
 			
