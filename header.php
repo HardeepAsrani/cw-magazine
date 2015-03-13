@@ -44,7 +44,7 @@
 				if(  get_theme_mod('gplus_link','#') )
 					echo '<a href="'.get_theme_mod("gplus_link",'#').'" title="Google+" target="_blank"><span class="symbol">googleplus</span></a>';
 				if(  get_theme_mod('linkedin_link','#') )
-					echo '<a href="'.get_theme_mod("facebook_link",'#').'" title="Linkedin" target="_blank"><span class="symbol">linkedin</span></a>';
+					echo '<a href="'.get_theme_mod("linkedin_link",'#').'" title="Linkedin" target="_blank"><span class="symbol">linkedin</span></a>';
 				if(  get_theme_mod('youtube_link','#') )
 					echo '<a href="'.get_theme_mod("youtube_link",'#').'" title="Youtube" target="_blank"><span class="symbol">youtube</span></a>';
 				if(  get_theme_mod('rss_link','#') )
